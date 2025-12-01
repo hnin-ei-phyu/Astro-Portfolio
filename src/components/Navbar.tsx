@@ -16,28 +16,35 @@ const Navbar = () => {
             href="#about" 
             className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
           >
-            <span>☀</span>
+            <span>🧠</span>
             <span>About</span>
           </a>
           <a 
             href="#skills" 
-            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-600 transition-colors"
           >
-            <span>🌙</span>
+            <span>🛠️</span>
             <span>Skills</span>
           </a>
           <a 
             href="#projects" 
-            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors"
           >
-            <span>🦀</span>
+            <span>🗂️</span>
             <span>Projects</span>
           </a>
           <a 
-            href="#contact" 
-            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+            href="#journey" 
+            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors"
           >
-            <span>♎</span>
+            <span>🌱</span>
+            <span>Journey</span>
+          </a>
+          <a 
+            href="#contact" 
+            className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+          >
+            <span>📬</span>
             <span>Contact</span>
           </a>
         </div>

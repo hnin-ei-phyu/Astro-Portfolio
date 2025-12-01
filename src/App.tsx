@@ -7,6 +7,10 @@ import ThemeSwitcher from './components/ThemeSwitcher'
 import HeroSection from './components/HeroSection'
 import About from './components/About'
 import SkillSection from './components/SkillSection'
+import Project from './components/Project'
+import Myjourney from './components/Myjourney'
+import Contact from './components/Contact'
+
 
 const App = () => {
   return (
@@ -20,6 +24,9 @@ const App = () => {
         <Footer />
         <About />
         <SkillSection />
+        <Project />
+        <Myjourney />
+        <Contact />
       </div>
     </div>
   )

@@ -4,9 +4,9 @@ import AstroCard from './AstroCard'; // Import the new component
 const About = () => {
     // NOTE: Changed icon values from string literals to ReactNode compatible strings for consistency
     const cards = [
-        {name: "♎ Libra Sun", description: "I seek harmony and beauty in everything I create. Balance, elegance, and thoughtful design are at my core. I believe in creating interfaces that feel effortless and refined.", icon: "☀️", color: "libra" as const, hoverEffect: "hover:shadow-libra-pink"},
-        {name: "♊ Gemini Moon", description: "Curiosity drives me. I love learning new technologies, experimenting with interactions, and adapting quickly. My mind thrives on variety and clever solutions.", icon: "🌙", color: "gemini" as const, hoverEffect: "hover:shadow-gemini-turquoise"},
-        {name: "♋ Cancer Rising", description: "I approach the world with warmth and intuition. I create experiences that feel safe, comfortable, and emotionally resonant. User empathy guides my design decisions.", icon: "🌊", color: "cancer" as const, hoverEffect: "hover:shadow-cancer-lavender"}
+        {name: "⚖️ Libra Sun", description: "I seek harmony and beauty in everything I create. Balance, elegance, and thoughtful design are at my core. I believe in creating interfaces that feel effortless and refined.", icon: "☀️", color: "libra" as const, hoverEffect: "hover:shadow-libra-pink"},
+        {name: "🌜 Gemini Moon", description: "Curiosity drives me. I love learning new technologies, experimenting with interactions, and adapting quickly. My mind thrives on variety and clever solutions.", icon: "🌙", color: "gemini" as const, hoverEffect: "hover:shadow-gemini-turquoise"},
+        {name: "🦀 Cancer Rising", description: "I approach the world with warmth and intuition. I create experiences that feel safe, comfortable, and emotionally resonant. User empathy guides my design decisions.", icon: "🌊", color: "cancer" as const, hoverEffect: "hover:shadow-cancer-lavender"}
     ];
 
   return (

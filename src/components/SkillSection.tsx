@@ -30,7 +30,7 @@ const SkillSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-3xl">🌙</span>
+            <span className="text-3xl">⚙️</span>
             <h2 className="text-2xl font-bold text-foreground">Skills</h2>
           </div>
           <p className="text-muted-foreground">
