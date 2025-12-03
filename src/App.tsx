@@ -10,6 +10,7 @@ import SkillSection from './components/SkillSection'
 import Project from './components/Project'
 import Myjourney from './components/Myjourney'
 import Contact from './components/Contact'
+import Scrollup from './components/Scrollup'
 
 
 const App = () => {
@@ -17,16 +18,18 @@ const App = () => {
     <div className='bg-background text-foreground min-h-screen'>
        <HeroSection />
       <div className=' mx-4 sm:mx-[10%]'>
+        <Scrollup />
         <ToastContainer />
         <ThemeSwitcher />
         <CosmicBackground />
         <Navbar />
-        <Footer />
         <About />
         <SkillSection />
         <Project />
         <Myjourney />
         <Contact />
+        <Footer />
+       
       </div>
     </div>
   )

@@ -128,6 +128,7 @@
 html {
   color-scheme: light dark;
   scroll-behavior: smooth;
+  overflow-y: auto; /* must allow scrolling */
 }
 
 body {
@@ -135,4 +136,5 @@ body {
   @apply bg-background text-foreground;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-y: auto; /* must allow scrolling */
 }

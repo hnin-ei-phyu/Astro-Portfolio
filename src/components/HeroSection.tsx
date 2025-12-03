@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
-import { Sparkle } from 'lucide-react'
+import { Download, Sparkle } from 'lucide-react'
 
 
 
 const HeroSection = () => {
 
-    const [displayedText, setDisplayedText] = useState("")
-    const fullText = "Hello, I'm a creative developer who is also into astrology ✨"
+  const [displayedText, setDisplayedText] = useState("")
+  const [isDownloading, setIsDownloading] = useState(false);
+  const fullText = "Hello, I'm a creative developer who is also into astrology ✨"
 
     useEffect(() => {
         let index = 0
@@ -22,7 +23,22 @@ const HeroSection = () => {
 
         return () => clearInterval(timer)
     }, [])
-
+  
+  //for download CV
+  const handleDownloadCV = async () => {
+    setIsDownloading(true);
+    try {
+      const link = document.createElement("a");
+      link.href = "/Elisa_CV.pdf"; // file inside public/
+      link.download = "Elisa_CV.pdf";
+      link.click();
+    } catch (error) {
+      console.error("Failed to generate CV:", error);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+  
   return (
     <section className="min-h-screen flex items-center justify-center relative z-10 px-6 overflow-hidden">
       {/* Background Image with Overlay */}
@@ -32,7 +48,7 @@ const HeroSection = () => {
           alt="Zodiac background" 
           className="w-full h-full object-cover opacity-40 dark:opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/80 dark:from-gray-900/60 dark:via-gray-900/40 dark:to-gray-900/80" />
+        <div className="absolute inset-0 bg-linear-to-b from-white/60 via-white/40 to-white/80 dark:from-gray-900/60 dark:via-gray-900/40 dark:to-gray-900/80" />
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -40,7 +56,7 @@ const HeroSection = () => {
           {/* Left Side - Content */}
           <div className="text-center lg:text-left">
             <div className="mb-8 animate-fadeIn">
-              <div className="inline-block p-6 rounded-full bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 dark:from-pink-900/30 dark:via-purple-900/30 dark:to-blue-900/30 shadow-xl mb-6 animate-float backdrop-blur-sm">
+              <div className="inline-block p-6 rounded-full bg-lineaer-to-br from-pink-100 via-purple-100 to-blue-100 dark:from-pink-900/30 dark:via-purple-900/30 dark:to-blue-900/30 shadow-xl mb-6 animate-float backdrop-blur-sm">
                 <Sparkle className="w-12 h-12 text-purple-600 dark:text-purple-400" />
               </div>
             </div>
@@ -63,10 +79,18 @@ const HeroSection = () => {
             <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
               <a
                 href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-pink-200 to-purple-200 dark:from-pink-800 dark:to-purple-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                className="px-8 py-3 bg-linear-to-r from-pink-200 to-purple-200 dark:from-pink-800 dark:to-purple-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 View My Work
               </a>
+              <button
+                onClick={handleDownloadCV}
+                disabled={isDownloading}
+                className="px-8 py-3 bg-linear-to-r from-indigo-200 to-blue-200 dark:from-indigo-800 dark:to-blue-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <Download className="w-5 h-5" />
+                {isDownloading ? "Generating..." : "Download CV"}
+              </button>
               <a
                 href="#contact"
                 className="px-8 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-800 dark:text-gray-100 rounded-lg border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
@@ -79,7 +103,7 @@ const HeroSection = () => {
           {/* Right Side - Girl Image */}
           <div className="flex justify-center lg:justify-end animate-fadeIn">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-200/30 via-purple-200/30 to-blue-200/30 dark:from-pink-800/20 dark:via-purple-800/20 dark:to-blue-800/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-pink-200/30 via-purple-200/30 to-blue-200/30 dark:from-pink-800/20 dark:via-purple-800/20 dark:to-blue-800/20 rounded-full blur-3xl animate-pulse"></div>
               <img 
                 src={assets.girl_img} 
                 alt="Creative developer" 

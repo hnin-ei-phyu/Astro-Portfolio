@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({title, description, image, tag
                 alt={title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-t from-indigo-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
                 <h3 className="text-gray-800 dark:text-gray-100 mb-2">{title}</h3>

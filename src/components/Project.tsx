@@ -38,7 +38,7 @@ const Project = () => {
               📦 Projects
             </h2>
           </div>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-muted-foreground">
             Work that tells a story — crafted with care and creativity
           </p>
         </div>
