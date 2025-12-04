@@ -9,7 +9,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <span className="text-2xl group-hover:animate-float transition-transform">✨</span>
+          <span className="text-2xl group-hover:animate-float transition-transform shadow-lg"><img src="/public/sign.png" alt="" /></span>
           <span className="font-medium text-foreground">Portfolio</span>
         </a>
 
@@ -44,7 +44,7 @@ export default Navbar;
 /* Reusable Navigation Links */
 const NavLinks = ({ mobile = false }) => (
   <div className={`flex flex-col ${mobile ? "" : "flex-row gap-6"}`}>
-    <a href="#about" className="nav-item flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors">🧠 About</a>
+    <a href="#about" className="nav-item flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors">🌸 About</a>
     <a href="#skills" className="nav-item flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">🛠️ Skills</a>
     <a href="#projects" className="nav-item flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">🗂️ Projects</a>
     <a href="#journey" className="nav-item flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors">🌱 Journey</a>
