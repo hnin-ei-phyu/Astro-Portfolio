@@ -56,8 +56,9 @@ const HeroSection = () => {
           {/* Left Side - Content */}
           <div className="text-center lg:text-left">
             <div className="mb-8 animate-fadeIn">
-              <div className="inline-block p-6 rounded-full bg-lineaer-to-br from-pink-100 via-purple-100 to-blue-100 dark:from-pink-900/30 dark:via-purple-900/30 dark:to-blue-900/30 shadow-xl mb-6 animate-float backdrop-blur-sm">
-                <Sparkle className="w-12 h-12 text-purple-600 dark:text-purple-400" />
+              <div className="inline-block p-6 rounded-fu l bg-lineaer-to-br from-pink-100 via-purple-100 to-blue-100 dark:from-pink-900/30 dark:via-purple-900/30 dark:to-blue-900/30 shadow-xl mb-6 animate-float backdrop-blur-sm">
+                <span className='text-lg'>Hnin </span>
+                <span className=' text-cyan-300 text-lg'>Ei Phyu</span>
               </div>
             </div>
             
