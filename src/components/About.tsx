@@ -1,4 +1,3 @@
-import React from 'react';
 import AstroCard from './AstroCard'; // Import the new component
 
 const About = () => {

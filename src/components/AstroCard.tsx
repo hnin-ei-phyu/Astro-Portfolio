@@ -1,4 +1,5 @@
 import React, { type ReactNode } from 'react';
+import type { CSSProperties } from 'react';
 
 // Define the mapping of color names to Tailwind classes using your custom variables
 const colorStyles: Record<AstroCardProps['color'], string> = {
@@ -13,6 +14,7 @@ interface AstroCardProps {
   icon: ReactNode;
   color: "libra" | "gemini" | "cancer";
   hoverEffect?: string;
+  style?: CSSProperties;
 }
 
 const AstroCard: React.FC<AstroCardProps> = ({ name, description, icon, color, hoverEffect }) => {

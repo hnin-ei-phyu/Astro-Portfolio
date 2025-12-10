@@ -1,4 +1,3 @@
-import React from 'react'
 import JourneyItem from './JourneyItem'
 import { Code, Palette, Rocket, Sparkles } from 'lucide-react'
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <span className="text-2xl group-hover:animate-float transition-transform shadow-lg"><img src="/public/sign.png" alt="" /></span>
+          <span className="text-2xl group-hover:animate-float transition-transform shadow-lg"><img src="./sign.png" alt="" /></span>
           <span className="font-medium text-foreground">Portfolio</span>
         </a>
 

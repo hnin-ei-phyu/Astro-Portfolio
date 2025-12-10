@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Sun, Moon } from "lucide-react"
 
 const ThemeSwitcher = () => {
@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
     // EFFECT 2 (Optional but Recommended): Listen to OS changes while running
     useEffect(() => {
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-        const handler = (e) => {
+        const handler = (e: MediaQueryListEvent) => {
             // Only update if no explicit theme is saved in localStorage
             if (!localStorage.getItem("theme")) {
                 setIsDark(e.matches)

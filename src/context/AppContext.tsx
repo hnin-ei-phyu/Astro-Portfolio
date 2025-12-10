@@ -1,12 +1,26 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
+import { type ReactNode } from 'react'
+import type { Dispatch, SetStateAction } from 'react'; // Import necessary types
 
-export const AppContext = createContext();
+interface AppContextType {
+  count: number;
+  setCount: Dispatch<SetStateAction<number>>; // The correct type for useState setter
+}
 
-const AppContextProvider = ({ children }) => {
+const defaultContextValue: AppContextType = {
+  count: 0,
+  setCount: () => {}, // A dummy function
+};
 
-  const [count, setCount] = useState(0)
+export const AppContext = createContext<AppContextType>(defaultContextValue);
+
+const AppContextProvider = ({ children }: {children: ReactNode}) => {
+
+  // 3. **The State:** This is the data being managed
+  const [count, setCount] = useState(0) 
   
-  const value = {
+  // 4. **The Value Object:** This must match the interface (AppContextType)
+  const value: AppContextType = { // Explicitly type the value object for safety
     count,
     setCount,
   }

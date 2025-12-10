@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 
 const styleClasses = {
     libra: "bg-gradient-to-r from-pink-50 to-blue-50 dark:from-pink-900/30 dark:to-blue-900/30 border-pink-200/50 dark:border-pink-700/50 hover:shadow-md hover:scale-105",
