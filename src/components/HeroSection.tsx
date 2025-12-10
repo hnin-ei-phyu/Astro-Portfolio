@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
-import { Download, Sparkle } from 'lucide-react'
+import { Download, } from 'lucide-react'
 
 
 
